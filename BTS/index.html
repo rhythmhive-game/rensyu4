@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BTS</title>
 
   <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* ページ本体だけ中央 */
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
     .page-title {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       gap: 0.5em;
       font-size: clamp(18px, 10vw, 40px);
-    }
-    
-    .center-img {
-      display: block;      /* 重要 */
-      margin: 0 auto;      /* 左右を自動で中央 */
     }
 
     .title-icon {
       width: 1.5em;
       height: auto;
-      display: block;      /* 重要 */
-      margin: 0 auto;      /* 左右を自動で中央 */
     }
 
     .fig-icon {
       width: 10em;
       height: auto;
+      display: block;
+      margin: 20px auto;
     }
+
+    /* 右下固定：戻る */
     .back-fixed {
       position: fixed;
       bottom: 16px;
@@ -41,15 +50,13 @@
       border-radius: 10px;
       text-decoration: none;
       z-index: 100;
-      align-items: right;
     }
-    .home-btn {
-      display: inline-flex;
-      position: flex;
-      top: 16px;
-      /* gap: 6px; */
-      right: 16px;
 
+    /* 右上固定：ホーム */
+    .home-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
       padding: 10px 16px;
       background: #000;
       color: #fff;
@@ -57,67 +64,43 @@
       text-decoration: none;
       font-size: 14px;
     }
-
   </style>
 </head>
 
 <body>
 
-  <h1 class="page-title">
-    <img
-      src="../image/BTS/TOP/TOP_25_BTS1.webp"
-      
-      alt=""
-      class="title-icon"
-    >
-    BTS
-    <img
-      src="../image/BTS/TOP/TOP_25_BTS1.webp"
-      alt=""
-      class="title-icon"
-    >
-  </h1>
-
+  <!-- 右寄りボタン（中央化の影響を受けない） -->
   <a href="../index.html" class="back-fixed">← 戻る</a>
-  <a href="https://rhythmhive-game.github.io/rensyu4/" class="home-btn">
-    🏠 ホーム
-  </a>
-  
+  <a href="https://rhythmhive-game.github.io/rensyu4/" class="home-btn">🏠 ホーム</a>
 
-  <h3>
-    ↓ ↓ ↓ CLICK ↓ ↓ ↓
-  </h3>
-<a href="https://rhythmhive-game.github.io/rensyu4/BTS/SONG/">
-  <img
-    src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/SONG.webp"
-    alt="曲一覧へ"
-    class="fig-icon"
-    
-  > <br>
-</a>
+  <!-- ここだけ中央 -->
+  <div class="page">
 
-<a href="https://rhythmhive-game.github.io/rensyu4/BTS/THEME/">
-  <img
-    src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/THEME.webp"
-    alt="テーマ一覧へ"
-    class="fig-icon"
-  > <br>
-</a>
+    <h1 class="page-title">
+      <img src="../image/BTS/TOP/TOP_25_BTS1.webp" alt="" class="title-icon">
+      BTS
+      <img src="../image/BTS/TOP/TOP_25_25_BTS1.webp" alt="" class="title-icon">
+    </h1>
 
-  <a href="https://rhythmhive-game.github.io/rensyu4/BTS/HIT/">
-  <img
-    src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/HIT.webp"
-    alt="HIT数ランキングへ"
-    class="fig-icon"
-  > <br>
-</a>
+    <h3>↓ ↓ ↓ CLICK ↓ ↓ ↓</h3>
+
+    <a href="https://rhythmhive-game.github.io/rensyu4/BTS/SONG/">
+      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/SONG.webp" alt="曲一覧へ" class="fig-icon">
+    </a>
+
+    <a href="https://rhythmhive-game.github.io/rensyu4/BTS/THEME/">
+      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/THEME.webp" alt="テーマ一覧へ" class="fig-icon">
+    </a>
+
+    <a href="https://rhythmhive-game.github.io/rensyu4/BTS/HIT/">
+      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/HIT.webp" alt="HIT数ランキングへ" class="fig-icon">
+    </a>
+
     <a href="https://rhythmhive-game.github.io/rensyu4/BTS/LENGTH/">
-  <img
-    src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/LENGTH.webp"
-    alt="曲の長さランキングへ"
-    class="fig-icon"
-  > <br>
-</a>
+      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/LENGTH.webp" alt="曲の長さランキングへ" class="fig-icon">
+    </a>
+
+  </div>
 
 </body>
 </html>
