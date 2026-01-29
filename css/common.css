@@ -120,26 +120,20 @@ img {
 }
 
 @media (max-width: 800px) {
-  .site-menu ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px 8px;
-    text-align: center;
-  }
+
 
   .site-menu li {
     margin: 0;
-  }
-
-    .site-menu ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center; /* 横中央 */
-    align-items: center;     /* 縦中央 */
-  }
-
-  .site-menu li {
     text-align: center;
+  }
+
+  .site-menu ul {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 8px;
+  text-align: center;
+  justify-items: center; /* ← gridではこっち */
+  align-items: center;
   }
 
   .header {
@@ -174,15 +168,7 @@ img {
   padding-bottom: 50px;
   display: block;
   }
-    .header {
-    position: relative;
-    height: auto;
-  }
-
-  .header-site-menu {
-    position: static;
-    display: block;
-  }
+  
 
   .site-menu ul li a {
   font-family: 'Montserrat', sans-serif;
