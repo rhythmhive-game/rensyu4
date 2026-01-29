@@ -149,6 +149,7 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: auto;
   }
 
   .header-inner {
