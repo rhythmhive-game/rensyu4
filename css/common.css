@@ -216,3 +216,16 @@ img {
     margin-top: 50px;
   }
 }
+
+@media (max-width: 800px) {
+  .header {
+    position: relative !important;
+    height: auto !important;
+    background: red !important;
+  }
+
+  .header-site-menu {
+    display: block !important;
+    position: static !important;
+  }
+}
