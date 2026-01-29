@@ -121,37 +121,38 @@ img {
 
 @media (max-width: 800px) {
   .site-menu ul {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 8px;
     text-align: center;
   }
 
   .site-menu li {
-    margin-top: 20px;
+    margin: 0;
   }
-/* 
+
+    .site-menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center; /* 横中央 */
+    align-items: center;     /* 縦中央 */
+  }
+
+  .site-menu li {
+    text-align: center;
+  }
+
   .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    height: 50px;
-    z-index: 10;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  } */
-    .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 120px; /* 画像が見える高さに */
-    background-image: url("./image/page_top.webp");
+    position: relative;
+    height: 160px; /* ← auto じゃなく高さを持たせる */
+    background-image: url("../image/page_top.webp");
     background-size: cover;
     background-position: center;
-    background-color: transparent; /* ←これ重要 */
+    background-repeat: no-repeat;
   }
 
   .header-inner {
+    overflow: visible;
     padding-left: 20px;
     padding-right: 20px;
     height: 100%;
@@ -161,18 +162,29 @@ img {
   .header-logo {
     width: 100px;
   }
-
   .header-site-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    color: #ffffff;
-    background-color: #736E62;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    display: none;
+  position: static;   /* ←ここ変更 */
+  top: 120px;        /* ヘッダーの高さ分 */
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  background-color: #736E62;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: block;
   }
+
+  .site-menu ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  color: #000;
+  text-shadow: 0 3px 0 rgba(0,0,0,0.15);
+  white-space: nowrap;
+  text-decoration: underline;
+  }
+
+
 
   .header-site-menu.is-show {
     display: block;
@@ -193,7 +205,7 @@ img {
   }
 
   .main {
-    padding-top: 50px;
+    padding-top: 120px;
   }
 
   .footer-logo {
