@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 2vw;
+  text-align: center;
+  margin: 10px;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+
+h3 {
+  font-size: 6vw;
+  text-align: center;
+  margin: 10px;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+.all {
+  text-align: center;  /* 横中央 */
+  margin: 10px;
+  padding: 10px;
+}
+
+.all img {
+  max-width: 90%;
+  height: auto;
+  display: inline-block;  /* 横中央用 */
+  margin: 10px 0;
+}

@@ -1,106 +1,156 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTS</title>
+    <meta charset="UTF-8">
+    <title>KISSA official website</title>
+    <meta name="description" context="BTS">
+    <!-- <meta name="viewport" content="width=devie-width"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
+    <script src="../js/toggle-menu.js"></script>
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/top.css" rel="stylesheet">
+    <link href="../css/bts.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-    /* ページ本体だけ中央 */
-    .page {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .page-title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 0.5em;
-      font-size: clamp(18px, 10vw, 40px);
-    }
-
-    .title-icon {
-      width: 1.5em;
-      height: auto;
-    }
-
-    .fig-icon {
-      width: 10em;
-      height: auto;
-      display: block;
-      margin: 20px auto;
-    }
-
-    /* 右下固定：戻る */
-    .back-fixed {
-      position: fixed;
-      bottom: 16px;
-      right: 16px;
-      padding: 12px 16px;
-      background: #000;
-      color: #fff;
-      border-radius: 10px;
-      text-decoration: none;
-      z-index: 100;
-    }
-
-    /* 右上固定：ホーム */
-    .home-btn {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      padding: 10px 16px;
-      background: #000;
-      color: #fff;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-  </style>
 </head>
 
 <body>
+    <header class="header"
+        style="background-image: url('../image/BTS/TOP/Header.webp');">
+        <div class="header-inner">
+            <img class="header-logo">
+            <button class="toggle-menu-button">
+                <span></span>
+            </button>
+            <nav class="header-site-menu">
+                <ul class="site-menu">
+                    <li><a href="../BTS/index.html">BTS</a></li>
+                    <li><a href="../TXT/index.html">
+                            <span class="pc-label">TXT</span>
+                            <span class="sp-label">TOMORROW X TOGETHER</span></a></li>
+                    <li><a href="../EN/index.html">
+                            <span class="pc-label">EN-</span>
+                            <span class="sp-label">ENHYPEN</span></a></li>
+                    <li><a href="../SVT/index.html">
+                            <span class="pc-label">SVT</span>
+                            <span class="sp-label">SEVENTEEN</span></a></li>
+                    <li><a href="../LE/index.html">
+                            <span class="pc-label">LE</span>
+                            <span class="sp-label">LE SSERAFIM</span></a></li>
+                    <li><a href="../NJ/index.html">
+                            <span class="pc-label">NJ</span>
+                            <span class="sp-label">New Jeans</span></a></li>
+                    <li><a href="../BND/index.html">
+                            <span class="pc-label">BND</span>
+                            <span class="sp-label">BOYNEXTDOOR</span></a></li>
+                    <li><a href="../ILT/index.html">
+                            <span class="pc-label">ILT</span>
+                            <span class="sp-label">ILIIT</span></a></li>                    
+                    <li><a href="../TWS/index.html">TWS</a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- 右寄りボタン（中央化の影響を受けない） -->
-  <a href="../index.html" class="back-fixed">← 戻る</a>
-  <a href="https://rhythmhive-game.github.io/rensyu4/" class="home-btn">🏠 ホーム</a>
+    <main class="main">
 
-  <!-- ここだけ中央 -->
-  <div class="page">
+      <h1>曲</h1>
+      <div class="first">
+        <div class="card">
+          <a href="song.html">
+            <img src="../image/BTS/TOP/SONG.webp" alt="">
+          </a>
+        </div>
 
-    <h1 class="page-title">
-      <img src="../image/BTS/TOP/TOP.webp" alt="" class="title-icon">
-      BTS
-      <img src="../image/BTS/TOP/TOP.webp" alt="" class="title-icon">
-    </h1>
+        <div class="card">
+          <a href="hit.html">
+            <img src="../image/BTS/TOP/HIT.webp" alt="">
+          </a>
+        </div>
 
-    <h3>↓ ↓ ↓ CLICK ↓ ↓ ↓</h3>
+        <div class="card">
+          <a href="length.html">
+            <img src="../image/BTS/TOP/LENGTH.webp" alt="">
+          </a>
+        </div>
+      </div>
 
-    <a href="https://rhythmhive-game.github.io/rensyu4/BTS/SONG/">
-      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/SONG.webp" alt="曲一覧へ" class="fig-icon">
-    </a>
+      <h1>アーテイスト</h1>
+      <div class="second">
+        <div class="card">
+          <a href="../BTS/THEME/index.html">
+            <img src="../image/BTS/TOP/THEME.webp" alt="">
+          </a>
+        </div>
+      </div>
 
-    <a href="https://rhythmhive-game.github.io/rensyu4/BTS/THEME/">
-      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/THEME.webp" alt="テーマ一覧へ" class="fig-icon">
-    </a>
+      <h1>BTS</h1>
+      <div class="all">
+        <img src="../image/BTS/TOP/All.webp" alt="">
+      </div>
+      <!-- <div class="photo">
+        <img src="../image/BTS/TOP/All.webp" alt="">
+        <h2>RM</h2>
+        <img src="../image/BTS/TOP/1-RM.webp" alt="">
+        <h2>JIN</h2>
+        <img src="../image/BTS/TOP/2-JIN.webp" alt="">
+        <h2>SUGA</h2>
+        <img src="../image/BTS/TOP/3-SUGA.webp" alt="">
+        <h2>J-HOPE</h2>
+        <img src="../image/BTS/TOP/4-JHOPE.webp" alt="">      
+        <h2>JIMIN</h2>
+        <img src="../image/BTS/TOP/5-JIMIN.webp" alt="">
+        <h2>V</h2>
+        <img src="../image/BTS/TOP/6-V.webp" alt="">
+        <h2>JUNG KOOK</h2>
+        <img src="../image/BTS/TOP/7-JK.webp" alt="">
+      </div>   -->
+      <div class="photo">
+        <div class="member">
+          <img src="../image/BTS/TOP/1-RM.webp" alt="">
+          <h2>RM</h2>
+        </div>
+        <div class="member">
+          <img src="../image/BTS/TOP/2-JIN.webp" alt="">
+          <h2>JIN</h2>
+        </div>
+        <div class="member">
+          <img src="../image/BTS/TOP/3-SUGA.webp" alt="">
+          <h2>SUGA</h2>
+        </div>
+        <div class="member">
+          <img src="../image/BTS/TOP/4-JHOPE.webp" alt="">
+          <h2>J-HOPE</h2>
+        </div>
+        <div class="member">
+          <img src="../image/BTS/TOP/5-JIMIN.webp" alt="">
+          <h2>JIMIN</h2>
+        </div>
+        <div class="member">
+          <img src="../image/BTS/TOP/6-V.webp" alt="">
+          <h2>V</h2>
+        </div>
+        <div class="member">
+          <img src="../image/BTS/TOP/7-JK.webp" alt="">
+          <h2>JUNG KOOK</h2>
+        </div>
+      </div>  
 
-    <a href="https://rhythmhive-game.github.io/rensyu4/BTS/HIT/">
-      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/HIT.webp" alt="HIT数ランキングへ" class="fig-icon">
-    </a>
+    
+    </main>
 
-    <a href="https://rhythmhive-game.github.io/rensyu4/BTS/LENGTH/">
-      <img src="https://rhythmhive-game.github.io/rensyu4/image/BTS/TOP/LENGTH.webp" alt="曲の長さランキングへ" class="fig-icon">
-    </a>
 
-  </div>
+
+    
+    <footer class="footer">
+    </footer>
 
 </body>
+
 </html>

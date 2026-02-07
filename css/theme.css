@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 2vw;
+  text-align: center;
+  margin: 10px;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+.card img{
+  width: 20vw;
+  margin-left: 10px;
+}
+
+.song {
+  flex: 1;
+  text-align: left;
+}
+
+.song ul {
+  list-style: disc;
+  padding-left: 20px; 
+  margin: 0;
+}
+
+.song ul li {
+  margin-bottom: 2px;
+}
+/* ページ全体のセットを2列に並べる */
+.sets-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px; /* セット同士の間隔 */
+  margin: 2px;
+}
+
+.theme {
+  display: flex; /* カードとソングを横並び */
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.theme .card img {
+  width: 60px; /* 好きなサイズに調整 */
+  display: block;
+}
+
+.theme .song ul {
+  list-style: disc; /* ● */
+  padding-left: 5px;
+  /* padding-right: 5px; */
+  font-size: 2vw;
+}
+
+.theme .card {
+  width:100px;  /* カードの横幅 */
+  
+  flex-shrink: 0; /* 縮まないようにする */
+}
+.theme .card img {
+  width: 80%;
+  
+  object-fit: cover; /* 縦横比を維持してはみ出す部分をカット */
+  display: block;
+}

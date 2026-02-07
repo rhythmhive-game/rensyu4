@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+.first {
+  display: flex;
+  gap: 20px; 
+  padding: 20px 0;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+
+
+.card img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+
+.card {
+  width: 30%; /* すべてのカードに同じ幅を指定 */
+  text-align: center;
+}
+
+.first, .second {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.main-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 999px;
+}
+
+.card p {
+  margin-top:5px;
+  line-height: 1.6;
+}
+.photo img {
+  width: 30%;
+}
+h1 {
+  font-size: 20px;
+  background-color: red;
+  text-align: center;
+}
+h2 {
+  font-size: 15px;
+  background-color: #8C65F6;
+  text-align: center;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member {
+  text-align: center;
+  width: 150px; /* 画像+名前のカード幅 */
+}
+
+.member img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.member h2 {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.all {
+  display: flex;             /* フレックスボックスで配置 */
+  justify-content: center;   /* 横中央 */
+  align-items: center;       /* 縦中央 */
+  height: 80vh;             /* 画面の高さいっぱい */
+  background-color: #f5f5f5; /* 背景色（任意） */
+}
+
+.all img {
+  max-width: 90%;   /* 画面に収まる最大幅 */
+  height: auto;
+  display: block;
+}
+
