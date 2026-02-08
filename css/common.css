@@ -48,19 +48,11 @@ img {
 
 .header {
   height: 200px;
-  /* 好きな高さ */
-  /* background-image: url("../image/page_top.webp"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
-
-
-/* .header-logo {
-  display: block;
-  width: 170px;
-} */
 
 .site-menu {
   position: absolute;
@@ -76,23 +68,6 @@ img {
 .sp-label {
   display: none;
 }
-
-/* .site-menu {
-  position: absolute;
-  bottom: 10px;
-
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.site-menu ul {
-  display: flex;
-}
-
-.site-menu ul li {
-  margin-left: 20px;
-  margin-right: 20px;
-} */
 
 .site-menu ul li a {
   font-family: 'Montserrat', sans-serif;
@@ -190,7 +165,7 @@ img {
     top: 70px;
     left: 0;
     right: 0;
-    background-color: #ab6beb83;
+    background-color: #c1ff4e83;
     padding-top: 30px;
     padding-bottom: 30px;
     display: none;
