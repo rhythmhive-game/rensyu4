@@ -2,7 +2,7 @@
   --main-color: #8C65F6;
   }
   
-  h1, h2 {
+  h1, h2, h3 {
     background-color:  var(--main-color);
   }
 
