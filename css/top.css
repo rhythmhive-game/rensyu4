@@ -91,8 +91,7 @@ h2 {
   display: flex;             /* フレックスボックスで配置 */
   justify-content: center;   /* 横中央 */
   align-items: center;       /* 縦中央 */
-  height: 35vh;             /* 画面の高さいっぱい */
-  
+  height: auto;             /* 画面の高さいっぱい */
 }
 
 .all img {

@@ -1,0 +1,12 @@
+   :root {
+  --main-color: #6A90EE;
+  }
+  
+  h1, h2, h3 {
+    background-color:  var(--main-color);
+  }
+
+  h3 {
+    color: white;
+  }
+  
