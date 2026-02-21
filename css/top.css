@@ -14,19 +14,15 @@
   padding: 20px 0;
 }
 
-
-
 .card img {
   width: 100%;
-  /* height: 100%; */
   object-fit: cover;
   display: block;
   border-radius: 12px;
 }
 
-
 .card {
-  width: 30%; /* すべてのカードに同じ幅を指定 */
+  width: 30%; 
   text-align: center;
 }
 
@@ -35,7 +31,6 @@
   justify-content: center;
   gap: 20px;
 }
-
 
 .main-button {
   display: inline-block;
@@ -50,53 +45,33 @@
   margin-top:5px;
   line-height: 1.6;
 }
+
 .photo img {
   width: 30%;
 }
+
 h1 {
   font-size: 20px;
-  background-color: red;
   text-align: center;
-}
-h2 {
-  font-size: 15px;
-  background-color: #8C65F6;
-  text-align: center;
+  padding: 10px;
 }
 
 .photo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .member {
   text-align: center;
-  width: 150px; /* 画像+名前のカード幅 */
+  display: flex;
+  flex-direction: column;
 }
 
-.member img {
-  width: 100%;
-  display: block;
-  border-radius: 8px;
-}
 
-.member h2 {
-  margin-top: 8px;
-  font-size: 16px;
+h4 {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  word-break: break-word;
 }
-
-.all {
-  display: flex;             /* フレックスボックスで配置 */
-  justify-content: center;   /* 横中央 */
-  align-items: center;       /* 縦中央 */
-  height: auto;             /* 画面の高さいっぱい */
-}
-
-.all img {
-  max-width: 90%;   /* 画面に収まる最大幅 */
-  height: auto;
-  display: block;
-}
-
