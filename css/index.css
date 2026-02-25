@@ -156,6 +156,14 @@ h3 {
 
   }
 
+  iframe {
+  display: block;
+  /* width: 70vw; */
+  /* height: 600px; */
+  margin: 30px auto;
+  padding: 10px;
+}
+
 
 @media (max-width: 1000px) {
   .first-view {
