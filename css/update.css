@@ -30,33 +30,7 @@ a{
 
 .sets-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0px; /* セット同士の間隔 */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px; /* セット同士の間隔 */
   margin: 2px;
 }
-
-.theme {
-  display: flex; /* カードとソングを横並び */
-  gap: 5px;
-  align-items: flex-start;
-}
-
-.theme .card img {
-  width: 60px;
-  display: block;
-}
-
-.theme .song ul {
-  list-style: disc;
-  font-size: 15px;
-}
-
-.theme .card {
-  width:70px;  /* カードの横幅 */
-  
-  flex-shrink: 0; /* 縮まないようにする */
-}
-
-/* .theme .song li {
-  white-space: nowrap;
-} */
